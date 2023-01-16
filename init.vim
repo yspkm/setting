@@ -399,3 +399,10 @@ command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organize
 " provide custom statusline: lightline.vim, vim-airline.
 set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 
+let g:coc_disable_startup_warning = 1
+
+set smartindent
+set tabstop=4
+set expandtab
+set shiftwidth=4
+
