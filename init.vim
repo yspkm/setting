@@ -32,7 +32,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 " Plug 'blueyed/vim-diminactive'
 
 " vim cutlass 잘라내기 명령어가 yank 에 영향을 주지 않음
-Plug 'svermeulen/vim-cutlass'
+" Plug 'svermeulen/vim-cutlass'
 
 " VIM GAS(GNU ASsembler) Highlighting
 Plug 'Shirk/vim-gas'
@@ -109,10 +109,6 @@ map <F9> <ESC>o/*<CR> * IAMROOT, <C-R>=strftime("%Y.%m.%d")<CR>
 " =========================================================================
 " =  vim 설정                                                             =
 " =========================================================================
-" 탭 정지 = 8 칸마다
-set tabstop=8
-" 쉬프트 (<< 혹은 >>) 이동거리 8 칸
-set shiftwidth=8
 
 " 줄 번호를 표시한다.
 set number
@@ -138,7 +134,7 @@ if has('nvim')			" nvim 을 사용 중이라면
 endif
 
 " vim 과 OS 의 클립보드 동기화
-set clipboard=unnamedplus
+" set clipboard=unnamedplus
 
 " GUI-Color 를 사용 가능하도록 설정 (TrueColor)
 " cterm 혹은 term 대신 gui 를 통해 색상을 설정할 수 있고
