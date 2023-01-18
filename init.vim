@@ -7,7 +7,6 @@ call plug#begin('~/.vim/plugged') " 플러그인 시작
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Tagbar 코드 뷰어 창
-" Plug 'majutsushi/tagbar'
 Plug 'preservim/tagbar'
 
 " NERDTree 코드 뷰어 창
@@ -28,12 +27,6 @@ Plug 'ronakg/quickr-cscope.vim'
 " CtrlP 파일 탐색 플러그인
 Plug 'ctrlpvim/ctrlp.vim'
 
-" 비활성 윈도우 강조
-" Plug 'blueyed/vim-diminactive'
-
-" vim cutlass 잘라내기 명령어가 yank 에 영향을 주지 않음
-" Plug 'svermeulen/vim-cutlass'
-
 " VIM GAS(GNU ASsembler) Highlighting
 Plug 'Shirk/vim-gas'
 
@@ -50,12 +43,6 @@ call plug#end()
 " =  re(recursive) 맵핑                                                   =
 " =  nore(no recursive) 맵핑                                              =
 " =========================================================================
-" ------------------------------------
-" 편집 모드 
-" ------------------------------------
-" jk 와 kj 를 <ESC> 키로 맵핑
-inoremap jk <ESC>
-inoremap kj <ESC>
 " ------------------------------------
 " 명령 모드 
 " ------------------------------------
@@ -87,19 +74,6 @@ nnoremap <silent><F2>
 	\:set winfixheight<CR><bar>
 	\:set nonu<CR><bar>
 	\iLS_COLORS=$LS_COLORS:'di=1;33:ln=36'<CR>
-" ------------------------------------
-" 터미널 모드 
-" ------------------------------------
-" 터미널 모드에서 <Ctrl + w> 누르면 명령 모드로 전환하고 <Ctrl + w> 입력
-tmap <silent><C-w> <ESC><C-w>
-
-" jk 혹은 kj 를 누르면 <ESC> 를 실행
-tmap <silent>jk <ESC>
-tmap <silent>kj <ESC>
-
-" <ESC> 입력 시 <C-\><C-n> 실행 => 터미널 모드에서 기본 모드로 전환
-tnoremap <silent><ESC> <C-\><C-n>
-
 " ------------------------------------
 " 명령, 비주얼 모드
 " ------------------------------------
