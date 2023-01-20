@@ -115,9 +115,6 @@ endif
 " 16,777,216 종류의 색상 표현 가능(기존 256)
 set termguicolors
 
-" 모든 마우스 기능을 사용
-set mouse=a
-
 " mkview 명령어가 저장하는 요소 중
 " 하나인 `options` 를 제거
 set viewoptions-=options
@@ -251,18 +248,7 @@ let g:airline#extensions#tabline#show_tabs = 1
 " NERDTree 설정
 " ------------------------------------
 " 창 크기(가로)를 20 으로 설정
-let g:NERDTreeWinSize=30
-" ------------------------------------
-" vim-cutlass 설정
-" ------------------------------------
-" c, C 명령어는 yank 에 영향을 주도록 변경
-nnoremap c d
-xnoremap c d
-
-nnoremap cc dd
-nnoremap C Dv
-
-
+" let g:NERDTreeWinSize=30
 
 
 " Use <c-space> to trigger completion.
