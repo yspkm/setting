@@ -248,7 +248,7 @@ let g:airline#extensions#tabline#show_tabs = 1
 " NERDTree 설정
 " ------------------------------------
 " 창 크기(가로)를 20 으로 설정
-" let g:NERDTreeWinSize=30
+let g:NERDTreeWinSize=80
 
 
 " Use <c-space> to trigger completion.
@@ -362,3 +362,7 @@ set tabstop=4
 set expandtab
 set shiftwidth=4
 
+" Prettier 명령어 생성
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
+vmap <leader>f  <Plug>(coc-format-selected)
+nmap <leader>f  <Plug>(coc-format-selected)
