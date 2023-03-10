@@ -358,11 +358,13 @@ set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 let g:coc_disable_startup_warning = 1
 
 set smartindent
-set tabstop=4
+set tabstop=2
 set expandtab
-set shiftwidth=4
+set shiftwidth=2
 
 " Prettier 명령어 생성
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 vmap <leader>f  <Plug>(coc-format-selected)
 nmap <leader>f  <Plug>(coc-format-selected)
+
+let g:coc_global_extensions = ['coc-clangd']
