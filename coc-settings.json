@@ -1,17 +1,5 @@
 {
-    "coc.preferences.formatOnSaveFiletypes": [
-        "css",
-        "markdown",
-        "html",
-        "cpp",
-        "c",
-        "rust",
-        "java",
-        "json",
-        "python3"
-    ],
-
-    "prettier.tabWidth": 4,
-
-    "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/15.0.1/clangd_15.0.1/bin/clangd"
+  "coc.preferences.formatOnSaveFiletypes": ["*"],
+  "prettier.tabWidth": 2,
+  "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/15.0.6/clangd_15.0.6/bin/clangd"
 }

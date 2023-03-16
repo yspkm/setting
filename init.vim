@@ -30,6 +30,9 @@ Plug 'ctrlpvim/ctrlp.vim'
 " VIM GAS(GNU ASsembler) Highlighting
 Plug 'Shirk/vim-gas'
 
+" Prettier
+Plug 'neoclide/coc-prettier'
+
 call plug#end()
 " =========================================================================
 " =  단축키 지정                                                          =
@@ -367,4 +370,4 @@ command! -nargs=0 Prettier :CocCommand prettier.formatFile
 vmap <leader>f  <Plug>(coc-format-selected)
 nmap <leader>f  <Plug>(coc-format-selected)
 
-let g:coc_global_extensions = ['coc-clangd', 'coc-go', 'coc-java', 'coc-pyright']
+let g:coc_global_extensions = ['coc-clangd']
