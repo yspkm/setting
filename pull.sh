@@ -1,3 +1,3 @@
 git pull origin master
-cp ./coc-settings.json ../
-cp ./init.vim ../
+cp ./coc-settings.json ~/.config/nvim/
+cp ./init.vim ~/.config/nvim/ 
