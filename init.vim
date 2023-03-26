@@ -371,3 +371,10 @@ vmap <leader>f  <Plug>(coc-format-selected)
 nmap <leader>f  <Plug>(coc-format-selected)
 
 let g:coc_global_extensions = ['coc-clangd', 'coc-pyright', 'coc-java']
+
+" 프로젝트별 coc setting 다르게
+let g:coc_config_home = expand(getcwd() . '/.vim')
+if !isdirectory(g:coc_config_home)
+  let g:coc_config_home = expand($HOME . '/.config/coc')
+endif
+

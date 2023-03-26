@@ -12,11 +12,6 @@
     "golang"
   ],
   "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/15.0.6/clangd_15.0.6/bin/clangd",
-  "java.project.sourcePaths": [
-    "src/main/java"
-  ],
-  "java.project.classPaths": [
-    "lib/*.jar",
-    "/usr/local/lib/*.jar"
-  ]
+  "java.project.sourcePaths": ["src/main/java"],
+  "java.project.classPaths": ["lib/*.jar", "/usr/local/lib/*.jar"]
 }
