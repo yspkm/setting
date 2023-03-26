@@ -250,7 +250,7 @@ let g:airline#extensions#tabline#show_tabs = 1
 " ------------------------------------
 " NERDTree 설정
 " ------------------------------------
-" 창 크기(가로)를 20 으로 설정
+" 창 크기(가로)를 80 으로 설정
 let g:NERDTreeWinSize=80
 
 
@@ -377,4 +377,3 @@ let g:coc_config_home = expand(getcwd() . '/.vim')
 if !isdirectory(g:coc_config_home)
   let g:coc_config_home = expand($HOME . '/.config/coc')
 endif
-
